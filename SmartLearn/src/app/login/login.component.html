@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Smart Learn</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+  <!-- The default layout, resets and and text styling -->
+<!--
+  <link href="stylesheets/main.css" rel="stylesheet">
+-->
+  <!-- Custom styling for the header -->
+<!--
+  <link href="stylesheets/header.css" rel="stylesheet">
+-->
+</head>
+<body>
+<header>
+  <section class="header-content">
+    <h1 class="header-title animate-pop-in">Smart Learn</h1>
+    <p class="header-button animate-pop-in"><button class="btn btn-primary btn-block">Start Learning</button>
+    </p>
+  </section>
+</header>
+<!--    <article class="content-overlay" id="section2">
+      <p>Main content holder scrolls in front of the fixed header</p>
+    </article>-->
+<script>
+    // Prepare the body tag by adding a "js-paused" class
+    document.body.className += " js-loading";
+
+    // Listen for when everything has loaded
+    window.addEventListener("load", showPage, false);
+
+    function showPage() {
+        // Remove the "js-paused" class
+        document.body.className = document.body.className.replace("js-loading","");
+    }
+</script>
+</body>
+</html>
